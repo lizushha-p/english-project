@@ -12,6 +12,7 @@
     "express": "^4.17.1",
     "firebase": "^7.14.0",
     "history": "^4.10.1",
+    "lodash": "^4.17.15",
     "rc-queue-anim": "^1.8.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -21,6 +22,7 @@
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
+    "reselect": "^4.0.0",
     "typeface-roboto": "0.0.75"
   },
   "scripts": {
