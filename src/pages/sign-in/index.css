@@ -1,0 +1,44 @@
+.wrapperSignIn{
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  }
+
+.imageSignIn{
+  height: 300px;
+}
+
+.wrapperformEnter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.inputSignIn{
+  width: 70%;
+  margin: 0px 60px ;
+  margin-bottom: 18px;
+  background: #D8D8D8 0.2;
+  }
+
+.titleSignIn{
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.buttonSignIn{
+  margin-top: 5px;
+  border-radius: 20px;
+  background: #FF5252;
+  font-weight: bold;
+}
+
+.buttonSignIn:hover{
+  background: #FF5252;
+}

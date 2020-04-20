@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="830px" viewBox="0 0 1440 830" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(0.000000, -147.000000)">
+            <g id="Group-2" transform="translate(-302.000000, 147.000000)">
+                <rect id="Rectangle-5" fill="#320B86" x="249" y="0" width="1546" height="648"></rect>
+                <rect id="Rectangle-6" fill="#2E1A63" x="249" y="641" width="1546" height="188"></rect>
+                <polygon id="Triangle" fill="#CE79D2" transform="translate(1022.000000, 230.500000) scale(1, -1) translate(-1022.000000, -230.500000) " points="1022 0 1795 461 249 461"></polygon>
+                <polygon id="Triangle-2" fill="#8BB9D2" transform="translate(1022.500000, 158.500000) scale(1, -1) translate(-1022.500000, -158.500000) " points="1022.5 0 1544 317 501 317"></polygon>
+                <polygon id="Triangle-3" fill="#463C71" transform="translate(1022.500000, 76.500000) scale(1, -1) translate(-1022.500000, -76.500000) " points="1022.5 0 1279 153 766 153"></polygon>
+                <polygon id="Triangle-4" fill="#9A67EA" transform="translate(370.000000, 705.500000) scale(-1, 1) rotate(135.000000) translate(-370.000000, -705.500000) " points="370 529 716 882 24 882"></polygon>
+                <polygon id="Triangle-4" fill="#9A67EA" transform="translate(1672.000000, 705.500000) rotate(135.000000) translate(-1672.000000, -705.500000) " points="1672 529 2018 882 1326 882"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
