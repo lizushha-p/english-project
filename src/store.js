@@ -2,11 +2,13 @@ import { combineReducers } from 'redux'
 import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import { connectRouter, routerMiddleware } from 'connected-react-router'
+import { AUTH_STORE_KEY, authReducer } from './modules/auth';
 import {history} from './history'
 
 
 const rootReducer = (history) => combineReducers({
-  router: connectRouter(history)
+  router: connectRouter(history),
+  [AUTH_STORE_KEY]: authReducer,
 })
 
 const middleWares = [
@@ -16,7 +18,7 @@ const middleWares = [
 
 const composeEnhancers =
   typeof window === 'object' &&
-  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   
+  window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
       // Specify extension’s options like name, actionsBlacklist, actionsCreators, serialize...
     }) : compose;
