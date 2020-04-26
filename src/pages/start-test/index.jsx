@@ -12,43 +12,67 @@ import { getQuizes, fetchQuizes } from '../../modules/quiz';
 import './index.css'
 
 class StartTestController extends Component {
+  state = {
+    result: 0,
+    activeQuestion: 0
+  }
+  
   componentDidMount() {
     this.props.fetchQuizes();
   }
 
-  render(){
-    console.log(this.props);
-    if (isEmpty(this.props.quizes)) {
-      return <h1>Loading!!!)))</h1>
+  onClickNextQuestion = () => {
+    this.setState({
+      activeQuestion: this.state.activeQuestion+1
+    })
+  }
+
+  onClickAnswerHandler = (event) => {
+    if(event.target.value === this.props.quizes[this.state.activeQuestion].rightAnswer){
+      this.setState({
+        result: this.state.result+1
+      })
     }
+    console.log(this.state.result)
+  }
+
+  render(){
+    if (isEmpty(this.props.quizes)) {
+      return <h1>Loading!!!))</h1>
+    }
+
     return (
+      this.state.activeQuestion <= 24 ?
       <div className='wrapperStartTest'>
         <FormControl component="fieldset">
           <FormLabel component="legend">
-
+            {this.props.quizes[this.state.activeQuestion].question}
           </FormLabel>
           <RadioGroup aria-label="answer" name="gender1">
-            <FormControlLabel
-              value={this.props.quizes[0].answers[0].text}
-              control={<Radio />}
-              label={this.props.quizes[0].answers[0].text}
-            />
-            <FormControlLabel
-              value={this.props.quizes[0].answers[1].text}
-              control={<Radio />}
-              label={this.props.quizes[0].answers[1].text}
-            />
-            <FormControlLabel
-              value={this.props.quizes[0].answers[2].text}
-              control={<Radio />}
-              label={this.props.quizes[0].answers[2].text}
-            />
+            {this.props.quizes[this.state.activeQuestion].answers.map((answer, index) => (
+              <FormControlLabel
+                key={index}
+                value={answer.text}
+                control={<Radio />}
+                label={answer.text}
+                onClick={this.onClickAnswerHandler}
+              />
+            ))}
           </RadioGroup>
         </FormControl>
         <Button
           variant="contained"
+          onClick={this.onClickNextQuestion}
         >
            Следующий вопрос
+        </Button>
+      </div> :
+      <div>
+        <h1>ваш результат: {this.state.result}</h1>
+        <Button
+          variant="contained"
+        >
+           Перейти к курсу
         </Button>
       </div>
     )
