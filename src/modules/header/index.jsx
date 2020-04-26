@@ -8,7 +8,7 @@ class Header extends Component{
     <div className='navigationBar'>
         <ul className='menuElementsLeft'>
           <li>
-            <NavLink to='/about'>О сайте</NavLink>
+            <NavLink to='/'>О сайте</NavLink>
           </li>
         </ul>
 

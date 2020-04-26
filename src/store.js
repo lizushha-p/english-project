@@ -3,12 +3,14 @@ import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import { connectRouter, routerMiddleware } from 'connected-react-router'
 import { AUTH_STORE_KEY, authReducer } from './modules/auth';
-import {history} from './history'
+import { QUIZ_STORE_KEY, quizReducer } from './modules/quiz';
+import { history } from './history'
 
 
 const rootReducer = (history) => combineReducers({
   router: connectRouter(history),
   [AUTH_STORE_KEY]: authReducer,
+  [QUIZ_STORE_KEY]: quizReducer,
 })
 
 const middleWares = [
