@@ -24,28 +24,29 @@ import './index.css'
 class StartTestController extends Component {
   state = {
     result: 0,
+    activeAnswer: 0,
     activeQuestion: 0,
     images: [onePicture, twoPicture, threePicture, fourPicture, fivePicture, sixPicture, sevenPicture, eightPicture],
     resultImage: resultPicture
   }
-  
+
   componentDidMount() {
     this.props.fetchQuizes();
   }
 
   onClickNextQuestion = () => {
     this.setState({
-      activeQuestion: this.state.activeQuestion+1
+      ...this.state,
+      activeQuestion: this.state.activeQuestion+1,
+      result: this.state.activeAnswer === this.props.quizes[this.state.activeQuestion].rightAnswer
+        ? this.state.result + 1 : this.state.result
     })
   }
 
   onClickAnswerHandler = (event) => {
-    if(event.target.value === this.props.quizes[this.state.activeQuestion].rightAnswer){
-      this.setState({
-        result: this.state.result+1
-      })
-    }
-    console.log(this.state.result)
+    this.setState({
+      activeAnswer: event.target.value,
+    })
   }
 
   random = (min,max) => {
@@ -94,7 +95,7 @@ class StartTestController extends Component {
           <h1 style={{fontSize:'35px'}}>Bаш результат: <span style={{color:'#5E2DE7', fontSize:'30px'}}>{this.state.result}</span></h1>
           <p style={{fontSize:'25px',marginTop:'10px'}}>
           Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информации. <br/>
-          Мы подобрали задания <br/>соответсвующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>А2</span>.    
+          Мы подобрали задания <br/>соответсвующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>А2</span>.
           </p>
           <Button
             variant="contained"

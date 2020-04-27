@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import { Formik, Form } from 'formik';
 import {ReactComponent as Enter} from './assets/enter.svg'
-import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
+import { FInput } from '../../component/inputs/input';
 import Page from '../../component/page/index'
 import './index.css'
 
@@ -11,21 +12,47 @@ class SignIn extends Component{
     return(
       <Page isShow>
         <div className='wrapperSignIn'>
-          < Enter style = {{paddingTop:'120px'}}/>
+          <Enter style = {{paddingTop:'120px'}}/>
+          <Formik
+            initialValues={{
+              login: '',
+              password: '',
+            }}
+            onSubmit={(values, { setSubmitting }) => {
+              console.log(values);
+              setSubmitting(false);
+            }}
+          >
           <div className='wrapperformEnter'>
             <div className='titleSignIn'>Вход</div>
-            <div className='wrapperSignInBack'>
-              <TextField className='inputSignIn' id="filled-basic" label="Логин" variant="filled" style={{marginTop:'20px'}}/>
-              <TextField className='inputSignIn' id="filled-basic" label="Пароль" variant="filled" style={{marginTop:'20px'}}/>
-            </div>
-            <div>
-              <Button className='buttonSignIn'
-                variant="contained"
-                endIcon={<Icon>send</Icon>}>
-                Готово
-              </Button>
-            </div>
+              <Form>
+                <div className='wrapperSignInBack'>
+                  <FInput
+                    className='inputSignIn'
+                    label="Логин"
+                    variant='filled'
+                    name="login"
+                  />
+                  <FInput
+                    className='inputSignIn'
+                    label="Пароль"
+                    variant='filled'
+                    name="password"
+                  />
+                </div>
+                <div>
+                  <Button
+                    className='buttonSignIn'
+                    variant="contained"
+                    endIcon={<Icon>send</Icon>}
+                    type="submit"
+                  >
+                    Готово
+                  </Button>
+                </div>
+              </Form>
           </div>
+          </Formik>
         </div>
       </Page>
     )
