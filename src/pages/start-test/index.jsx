@@ -14,26 +14,27 @@ import './index.css'
 class StartTestController extends Component {
   state = {
     result: 0,
-    activeQuestion: 0
+    activeQuestion: 0,
+    activeAnswer: 0,
   }
-  
+
   componentDidMount() {
     this.props.fetchQuizes();
   }
 
   onClickNextQuestion = () => {
     this.setState({
-      activeQuestion: this.state.activeQuestion+1
+      ...this.state,
+      activeQuestion: this.state.activeQuestion+1,
+      result: this.state.activeAnswer === this.props.quizes[this.state.activeQuestion].rightAnswer
+        ? this.state.result + 1 : this.state.result
     })
   }
 
   onClickAnswerHandler = (event) => {
-    if(event.target.value === this.props.quizes[this.state.activeQuestion].rightAnswer){
-      this.setState({
-        result: this.state.result+1
-      })
-    }
-    console.log(this.state.result)
+    this.setState({
+      activeAnswer: event.target.value,
+    })
   }
 
   render(){
