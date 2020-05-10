@@ -1,42 +1,41 @@
 .wrapperSignIn{
   display: flex;
-  padding-top: 30px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  }
-
-.imageSignIn{
-  height: 300px;
+  justify-content: space-between;
+  padding-left: 200px;
 }
-
+  
 .wrapperformEnter{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 400px;
+  margin-top: 50px;
+}
+
+.wrapperSignInBack{
+  background-image: url(./assets/bg.svg);
+  background-repeat: no-repeat;
+  background-size: 640px;
+  height: 200px;
 }
 
 .inputSignIn{
-  width: 70%;
-  margin: 0px 60px ;
-  margin-bottom: 18px;
+  width: 400px;
+  margin: 0px 130px ;
   background: #D8D8D8 0.2;
   }
 
 .titleSignIn{
   font-size: 30px;
-  margin-top: 10px;
+  font-style: bold;
   margin-bottom: 20px;
-  text-align: center;
+  margin-left: 295px;
 }
 
 .buttonSignIn{
-  margin-top: 5px;
-  border-radius: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
   background: #FF5252;
   font-weight: bold;
+  margin-left: 270px;
 }
 
 .buttonSignIn:hover{

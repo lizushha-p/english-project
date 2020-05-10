@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ReactComponent as SignPicture} from './assets/sign-in.svg'
+import {ReactComponent as Enter} from './assets/enter.svg'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
@@ -11,14 +11,12 @@ class SignIn extends Component{
     return(
       <Page isShow>
         <div className='wrapperSignIn'>
-          <div>
-            <SignPicture className='imageSignIn'/>
-          </div>
+          < Enter style = {{paddingTop:'120px'}}/>
           <div className='wrapperformEnter'>
             <div className='titleSignIn'>Вход</div>
-            <div>
-              <TextField className='inputSignIn' id="filled-basic" label="Логин" variant="filled" />
-              <TextField className='inputSignIn' id="filled-basic" label="Пароль" variant="filled" />
+            <div className='wrapperSignInBack'>
+              <TextField className='inputSignIn' id="filled-basic" label="Логин" variant="filled" style={{marginTop:'20px'}}/>
+              <TextField className='inputSignIn' id="filled-basic" label="Пароль" variant="filled" style={{marginTop:'20px'}}/>
             </div>
             <div>
               <Button className='buttonSignIn'
