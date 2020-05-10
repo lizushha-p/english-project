@@ -1,6 +1,45 @@
-.back{
-  color: black;
-  font-size: 44px;
-  text-align: center;
-  padding: 150px 80px;
+.startPage{
+  display: flex;
+  align-items: center;
+  margin: 0px 60px;
+}
+
+.rightPartMainPage{
+  height: 320px;
+  padding-right: 50px;
+}
+
+.leftPartStartPage{
+  padding-top: 10px;
+  padding-left: 20px;
+  width: 800px;
+}
+
+.leftPartStartPage p{
+  color: #969696;
+  opacity: 54%;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 70px;
+}
+
+.PartSentences{
+  color: #969696;
+  opacity: 54%;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.SecondPartSentences{
+  color: #080b27;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.AppleGoogleIcon{
+  display: flex;
+  padding-top: 60px;
+  justify-content: space-between;
+  width: 340px;
+  cursor: pointer;
 }

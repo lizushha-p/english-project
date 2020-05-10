@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { ReactComponent as SignPicture} from './assets/sign-up.svg'
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
 import Page from '../../component/page/index'
 import { signUpUser } from './sign-up-actions';
+import { ReactComponent as SignUpPicture1} from './assets/sign-up1.svg'
+import { ReactComponent as SignUpPicture} from './assets/sign-up.svg'
 import './index.css'
 
 class SignUpController extends Component{
@@ -15,8 +16,8 @@ class SignUpController extends Component{
     login: '',
     firstName:'',
     lastName:'',
-    emailError: 'Неверный email',
-    passwordError: 'пароль должен быть >=6 символов',
+    emailError: '',
+    passwordError: '',
   }
 
   onEmailChangeHandler = (event) => {
@@ -31,7 +32,7 @@ class SignUpController extends Component{
     this.setState({
       ...this.state,
       password: event.target.value,
-      passwordError: event.target.value.length >=6 ? undefined : 'пароль должен быть >=6 символов',
+      passwordError: event.target.value.length >=6 || event.target.value.length === 0 ? undefined : 'пароль должен быть >=6 символов',
     })
   }
 
@@ -69,11 +70,9 @@ class SignUpController extends Component{
   render(){
     return(
       <Page isShow>
-        <div className='wrapperSignUp'>
-          <div>
-            <SignPicture className='imageSignUp'/>
-          </div>
-          <div className='wrapperformRegistaration'>
+          <div className='wrapperPageRegistaration'>
+            <SignUpPicture1/>
+            <div className='wrapperformRegistaration'>
             <div className='titleSignUp'>Регистрация</div>
             <div>
               <TextField
@@ -98,7 +97,6 @@ class SignUpController extends Component{
                 variant="filled"
                 value={this.state.lastName}
                 onChange={this.onLastNameChangeHanlder}
-                required
               />
               <TextField
                 className='inputSignUp'
@@ -120,19 +118,18 @@ class SignUpController extends Component{
                 error={this.state.passwordError}
               />
             </div>
-            <div>
-              <Button
+            </div>
+            <SignUpPicture/>
+          </div>
+          <Button
                 className='buttonSignUp'
                 variant="contained"
                 endIcon={<Icon>send</Icon>}
                 onClick={this.onSubmitClickHandler}
                 disabled={this.state.passwordError || this.state.emailError}
               >
-                Готово
-              </Button>
-            </div>
-          </div>
-        </div>
+                Далее
+          </Button>
       </Page>
     )
   }

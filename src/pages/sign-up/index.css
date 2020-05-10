@@ -1,42 +1,40 @@
-.wrapperSignUp{
+.wrapperPageRegistaration{
   display: flex;
-  background: linear-gradient(to top, #ff5252 20%, #320b86 80%) no-repeat;
-  background-size: 325px;
-  height: 630px;
-  }
-
-.imageSignUp{
-  height: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapperformRegistaration{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 400px;
+  margin: 0px 120px;
 }
 
 .inputSignUp{
-  width: 70%;
-  margin: 0px 60px ;
-  margin-bottom: 18px;
-  background: #D8D8D8 0.2;
+  display: flex;
+  width: 300px;
+  margin: 0px;
+  flex-direction: column;
+  margin-bottom: 20px;
   }
 
 .titleSignUp{
   font-size: 30px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-bottom: 20px;
 }
 
 .buttonSignUp{
-  margin-top: 20px;
-  border-radius: 20px;
+  left: 490px;
+  margin-top: 5px;
+  border-radius: 8px;
   background: #FF5252;
   font-weight: bold;
+  color:  #080b27;
+  left: 580px;
 }
 
 .buttonSignUp:hover{
   background: #FF5252;
+  color:  white;
 }

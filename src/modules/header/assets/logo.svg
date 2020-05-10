@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="130px" viewBox="0 0 175 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-88.000000, -68.000000)">
+            <g id="logo" transform="translate(80.000000, 68.000000)">
+                <path d="M96.4125326,108.218985 C144.737448,108.218985 183,147.122623 183,98.6997222 C183,50.2768212 144.737448,0 96.4125326,0 C48.087617,0 8,50.2768212 8,98.6997222 C8,147.122623 48.087617,108.218985 96.4125326,108.218985 Z" id="Oval" fill="#5E2DE7" style="mix-blend-mode: multiply;"></path>
+                <path d="M96.4125326,115.218985 C144.737448,115.218985 183,154.122623 183,105.699722 C183,57.2768212 144.737448,7 96.4125326,7 C48.087617,7 8,57.2768212 8,105.699722 C8,154.122623 48.087617,115.218985 96.4125326,115.218985 Z" id="Oval" fill="#D0CCDB" style="mix-blend-mode: multiply;"></path>
+                <text id="English" style="mix-blend-mode: luminosity;" font-family="PTSans-Caption, PT Sans Caption" font-size="24" font-weight="normal" line-spacing="24" fill="#FFFFFF" fill-opacity="0.87">
+                    <tspan x="53" y="90">English</tspan>
+                </text>
+                <text id="Learning" font-family="PTSans-Caption, PT Sans Caption" font-size="24" font-weight="normal" line-spacing="24" fill="#FFFFFF" fill-opacity="0.87">
+                    <tspan x="45" y="60">Learning</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
