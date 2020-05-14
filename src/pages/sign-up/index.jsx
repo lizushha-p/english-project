@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { isEmpty } from 'lodash';
 import { connect } from 'react-redux';
 import { Formik } from 'formik';
-import { ReactComponent as SignPicture} from './assets/sign-up.svg'
 import { SignUpForm } from './sign-up-form';
 import Page from '../../component/page/index'
 import { signUpUser } from './sign-up-actions';
+import { ReactComponent as SignUpPicture1} from './assets/sign-up1.svg'
 import './index.css'
 
 class SignUpController extends Component{
@@ -23,10 +23,8 @@ class SignUpController extends Component{
   render(){
     return(
       <Page isShow>
-        <div className='wrapperSignUp'>
-          <div>
-            <SignPicture className='imageSignUp'/>
-          </div>
+        <div className='wrapperPageRegistaration'>
+          <SignUpPicture1/>
           <Formik
             initialValues={{
               login: '',
@@ -47,7 +45,6 @@ class SignUpController extends Component{
               if (values.password.length < 6) {
                 errors.password = 'password should be more than 6 char';
               }
-              console.log(errors);
               return errors;
             } }
           >
