@@ -32,12 +32,14 @@ class SignIn extends Component{
                     label="Логин"
                     variant='filled'
                     name="login"
+                    style={{marginTop:'20px'}}
                   />
                   <FInput
                     className='inputSignIn'
                     label="Пароль"
                     variant='filled'
                     name="password"
+                    style={{marginTop:'20px'}}
                   />
                 </div>
                 <div>

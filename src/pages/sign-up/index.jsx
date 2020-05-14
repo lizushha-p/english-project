@@ -45,7 +45,6 @@ class SignUpController extends Component{
               if (values.password.length < 6) {
                 errors.password = 'password should be more than 6 char';
               }
-              console.log(errors);
               return errors;
             } }
           >
