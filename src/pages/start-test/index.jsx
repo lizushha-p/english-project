@@ -19,6 +19,7 @@ import sixPicture from './assets/image6.svg';
 import sevenPicture from './assets/image7.svg';
 import eightPicture from './assets/image8.svg';
 import resultPicture from './assets/image9.svg'
+import { getStartLevel } from './start-test-utils';
 import {NavLink} from 'react-router-dom'
 import './index.css'
 
@@ -55,6 +56,10 @@ class StartTestController extends Component {
 
   random = (min,max) => {
     return Math.floor(Math.random()*(max - min) + min);
+  }
+
+  get getEnglishLevel () {
+    return getStartLevel(this.state.result);
   }
 
   render(){
@@ -98,8 +103,8 @@ class StartTestController extends Component {
         <div className='rightpartResultMainTest'>
           <h1 style={{fontSize:'35px'}}>Bаш результат: <span style={{color:'#5E2DE7', fontSize:'30px'}}>{this.state.result}</span></h1>
           <p style={{fontSize:'25px',marginTop:'10px'}}>
-          Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информацией. <br/>
-            Мы подобрали задания <br/>соответствующие уровню - <span style={{color:'#FF5252', fontSize:'23px',fontWeight:'bold'}}>{this.state.level}</span>.
+          Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информации. <br/>
+          Мы подобрали задания <br/>соответсвующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>{this.getEnglishLevel}</span>.
           </p>
           <Button
             className='goToCourse'
