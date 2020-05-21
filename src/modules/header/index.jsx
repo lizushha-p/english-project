@@ -10,7 +10,7 @@ class Header extends Component{
           <LogoPicture className='logoPicture'/>
           <ul className='menuElements'>
             <li>
-              <NavLink to='/'>О сайте</NavLink>
+              <NavLink to='/about'>О сайте</NavLink>
             </li>
             <li>
               <NavLink to='/sign-up'>Регистрация</NavLink>
