@@ -23,14 +23,14 @@
   font-size: 22px;
 }
 
-a{
+.navLink_main{
   color: #080B27;
   opacity: 87%;
   padding: 10px 20px;
 }
 
-a:hover{
-  color: white;
+.navLink_main:hover{
+  color: #080B27;
   background-color: #5E2DE7;
   opacity: 100%;
   padding: 10px 20px;
@@ -38,7 +38,7 @@ a:hover{
   box-shadow: 0 2px 10px 0px rgb(139, 139, 139);
 }
 
-a.active{
+.navLink_main.active{
   color: white;
   background-color: #5E2DE7;
   opacity: 100%;

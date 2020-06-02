@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1252px" height="442px" viewBox="0 0 1252 942" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-509.000000, -4782.000000)">
+            <g id="Group-6" transform="translate(509.000000, 4782.000000)">
+                <path d="M100,0 L1152,0 C1207.22847,-1.01453063e-14 1252,44.771525 1252,100 L1252,842 C1252,897.228475 1207.22847,942 1152,942 L100,942 C44.771525,942 6.76353751e-15,897.228475 0,842 L0,100 C-6.76353751e-15,44.771525 44.771525,1.01453063e-14 100,0 Z" id="Rectangle-3" fill-opacity="0.219684103" fill="#C6C6C6"></path>
+                <text id="I-play-the..." font-family="PTSans-CaptionBold, PT Sans Caption" font-size="64" font-weight="bold" line-spacing="107" fill="#323232">
+                    <tspan x="111" y="150">I play the...</tspan>
+                </text>
+                <text id="In-English-the-corre" font-family="PTSans-Caption, PT Sans Caption" font-size="40" font-weight="normal" line-spacing="50" fill="#323232">
+                    <tspan x="116" y="244">In English the correct construction for «играть на </tspan>
+                    <tspan x="116" y="294">музыкальном инструменте» is “play + the + </tspan>
+                    <tspan x="116" y="344">instrument”:</tspan>
+                    <tspan x="116" y="394"></tspan>
+                    <tspan x="116" y="444">I play </tspan>
+                    <tspan x="236.92" y="444" font-family="PTSans-CaptionBold, PT Sans Caption" font-weight="bold">the</tspan>
+                    <tspan x="302.36" y="444"> guitar.</tspan>
+                    <tspan x="116" y="494" line-spacing="49"></tspan>
+                    <tspan x="116" y="543" line-spacing="49">He plays </tspan>
+                    <tspan x="295.64" y="543" font-family="PTSans-CaptionBold, PT Sans Caption" font-weight="bold" line-spacing="49">the</tspan>
+                    <tspan x="361.08" y="543" line-spacing="49"> drums.</tspan>
+                    <tspan x="116" y="592" line-spacing="49"></tspan>
+                    <tspan x="116" y="641">They play </tspan>
+                    <tspan x="313.88" y="641" font-family="PTSans-CaptionBold, PT Sans Caption" font-weight="bold">the</tspan>
+                    <tspan x="379.32" y="641"> flute.</tspan>
+                    <tspan x="116" y="691"></tspan>
+                    <tspan x="116" y="741">A common mistake is to translate from Russian and </tspan>
+                    <tspan x="116" y="791">say “I play on...”.</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

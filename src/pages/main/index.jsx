@@ -11,7 +11,7 @@ class Main extends Component{
       <div>
         <Header isShow = 'true'/>
         <div className='startPage'>
-          <div className='leftPartStartPage'>
+          <div className='leftPartMainPage'>
             <p>Наверное, лучшее место</p>
             <span className='PartSentences'>Ты</span><span className='SecondPartSentences'> - следующий, кто заговорит   на английском языке</span>
             <div className='AppleGoogleIcon'>

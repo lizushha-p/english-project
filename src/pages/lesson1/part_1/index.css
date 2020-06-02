@@ -1,0 +1,82 @@
+.part1_welcome button{
+  position: relative;
+  background: #5E2DE7;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  top:40px;
+  left: 158px;
+}
+
+.part1_welcome{
+  display: flex;
+}
+
+.part1_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  left: 1102px;
+  top: 10px;
+}
+
+.dialog_block button{
+  position: relative;
+  background: #5E2DE7;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  top:45px;
+  left: 230px;
+}
+
+.part2_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  left: 1102px;
+  top: -100px;
+}
+
+.answer_on_question1 {
+  display: flex;
+  justify-content: center;
+}
+
+.answer_on_question1 button{
+  outline: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 50px 10px;
+}
+
+.part3_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  margin-top: 20px;
+}
+
+.part4_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 60px;
+  width: 60px;
+  outline: none;
+  margin-top: 20px;
+  left: 615px;
+  top: 40px;
+}

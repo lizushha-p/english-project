@@ -94,8 +94,8 @@ class StartTestController extends Component {
         <div className='rightpartResultMainTest'>
           <h1 style={{fontSize:'35px'}}>Bаш результат: <span style={{color:'#5E2DE7', fontSize:'30px'}}>{this.state.result}</span></h1>
           <p style={{fontSize:'25px',marginTop:'10px'}}>
-          Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информации. <br/>
-          Мы подобрали задания <br/>соответсвующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>А2</span>.
+          Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информацией. <br/>
+          Мы подобрали задания <br/>соответствующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>А2</span>.
           </p>
           <Button
             variant="contained"

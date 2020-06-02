@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {NavLink} from 'react-router-dom'
 import { Formik, Form } from 'formik';
 import {ReactComponent as Enter} from './assets/enter.svg'
 import Button from '@material-ui/core/Button';
@@ -49,7 +50,8 @@ class SignIn extends Component{
                     endIcon={<Icon>send</Icon>}
                     type="submit"
                   >
-                    Готово
+                    <NavLink to='/course'>Готово
+                    </NavLink>
                   </Button>
                 </div>
               </Form>

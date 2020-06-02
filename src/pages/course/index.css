@@ -1,0 +1,41 @@
+.course_friend-request{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 150px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.course_active_title{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course_friend-request button{
+  background: #E91E63;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  outline: none;
+}
+
+
+.course_where_is_my_towl{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 600px;
+  background: rgba(198, 198, 198, 0.22);
+  padding-right: 130px;
+}
+
+.course_to_hire{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 150px;
+  height: 450px;
+  margin-top: 30px;
+}
