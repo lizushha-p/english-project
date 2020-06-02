@@ -39,6 +39,7 @@ class SignIn extends Component{
                     className='inputSignIn'
                     label="Пароль"
                     variant='filled'
+                    type="password"
                     name="password"
                     style={{marginTop:'20px'}}
                     type='password'
