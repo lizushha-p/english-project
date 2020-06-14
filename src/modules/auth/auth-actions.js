@@ -19,8 +19,10 @@ export const loginByEmailAndPassword = (email, password) => (dispatch) => {
           // берем пользователя
           .then(res => {
             console.log(res.val());
+            console.log(res.)
             if (res.val().level === 'A2') {
               history.push('/course')
+              return;
             }
             history.push('/error-exist-course')
           });
