@@ -7,7 +7,7 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(0.000000, -1442.000000)">
             <g id="Group-4" transform="translate(0.000000, 1442.000000)">
-                <path d="M281,0 L2023,0 C2178.19201,-2.85083106e-14 2304,125.807985 2304,281 L2304,2095 L0,2095 L0,281 C-1.90055404e-14,125.807985 125.807985,2.85083106e-14 281,0 Z" id="Rectangle-3" fill-opacity="0.219684103" fill="#C6C6C6"></path>
+                <path d="M281,0 L2023,0 C2178.19201,-2.85083106e-14 2304,125.807985 2304,281 L2304,2095 L0,2095 L0,281 C-1.90055404e-14,125.807985 125.807985,2.85083106e-14 281,0 Z" id="Rectangle-3"></path>
                 <g id="Group-2" transform="translate(451.000000, 461.000000)">
                     <path d="M58.5,3.04732749e-15 L198.251701,1.03271429e-14 L327.5,6.39488462e-14 C359.808658,2.93179894e-14 386,26.1913421 386,58.5 L386,58.5 C386,90.8086579 359.808658,117 327.5,117 L58.5,117 C26.1913421,117 3.95666944e-15,90.8086579 0,58.5 L0,58.5 C-3.95666944e-15,26.1913421 26.1913421,-1.17042319e-15 58.5,-7.10542736e-15 Z" id="Rectangle-2" fill="#323232"></path>
                     <text id="Hi." font-family="PTSans-Caption, PT Sans Caption" font-size="48" font-weight="normal" fill="#C6C6C6">
@@ -98,7 +98,7 @@
                 <g id="Group-2" transform="translate(1128.000000, 1838.000000)">
                     <path d="M58.5,1.79309209e-15 L336.92517,1.03271429e-14 L597.5,7.10542736e-15 C629.808658,1.17042319e-15 656,26.1913421 656,58.5 L656,58.5 C656,90.8086579 629.808658,117 597.5,117 L58.5,117 C26.1913421,117 3.95666944e-15,90.8086579 0,58.5 L0,58.5 C-3.95666944e-15,26.1913421 26.1913421,5.93500417e-15 58.5,0 Z" id="Rectangle-2" fill="#323232"></path>
                     <text id="Thank-you!-I-love-ja" font-family="PTSans-Caption, PT Sans Caption" font-size="48" font-weight="normal" fill="#C6C6C6">
-                        <tspan x="67" y="57">Thank you! I love jazz.</tspan>
+                        <tspan x="67" y="70">Thank you! I love jazz.</tspan>
                     </text>
                 </g>
                 <text id="Kate" font-family="PTSans-CaptionBold, PT Sans Caption" font-size="64" font-weight="bold" fill="#E91E63">

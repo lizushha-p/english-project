@@ -19,6 +19,7 @@ import sixPicture from './assets/image6.svg';
 import sevenPicture from './assets/image7.svg';
 import eightPicture from './assets/image8.svg';
 import resultPicture from './assets/image9.svg'
+import {NavLink} from 'react-router-dom'
 import './index.css'
 
 class StartTestController extends Component {
@@ -27,7 +28,8 @@ class StartTestController extends Component {
     activeAnswer: 0,
     activeQuestion: 0,
     images: [onePicture, twoPicture, threePicture, fourPicture, fivePicture, sixPicture, sevenPicture, eightPicture],
-    resultImage: resultPicture
+    resultImage: resultPicture,
+    level: 0
   }
 
   componentDidMount() {
@@ -39,7 +41,9 @@ class StartTestController extends Component {
       ...this.state,
       activeQuestion: this.state.activeQuestion+1,
       result: this.state.activeAnswer === this.props.quizes[this.state.activeQuestion].rightAnswer
-        ? this.state.result + 1 : this.state.result
+        ? this.state.result + 1 : this.state.result,
+      level: (this.state.result>=1)&&(this.state.result<=7) ? 'A2': this.state.result>7&&this.state.result<=16 ? 'B1':'B2',
+      link: (this.state.level==='A2'? '/course':'/error-exist-course')
     })
   }
 
@@ -95,13 +99,14 @@ class StartTestController extends Component {
           <h1 style={{fontSize:'35px'}}>Bаш результат: <span style={{color:'#5E2DE7', fontSize:'30px'}}>{this.state.result}</span></h1>
           <p style={{fontSize:'25px',marginTop:'10px'}}>
           Вы владеете знаниями для <br/> повседневного общения в <br/> медленном темпе,  обмена <br/> простой информацией. <br/>
-          Мы подобрали задания <br/>соответствующие уровню - <span style={{color:'#FF5252', fontSize:'23px'}}>А2</span>.
+            Мы подобрали задания <br/>соответствующие уровню - <span style={{color:'#FF5252', fontSize:'23px',fontWeight:'bold'}}>{this.state.level}</span>.
           </p>
           <Button
+            className='goToCourse'
             variant="contained"
             style={{background:'#5E2DE7', fontWeight:'bold', color:'white',marginTop:'40px'}}
           >
-             Перейти к курсу
+              <NavLink to={this.state.link}>Перейти к курсу</NavLink>
           </Button>
         </div>
       </div>

@@ -18,3 +18,11 @@
   margin-bottom: 120px;
   padding-right: 150px;
 }
+
+.goToCourse{
+  background: #5E2DE7;
+}
+
+.goToCourse a{
+  color: white;
+}

@@ -36,8 +36,15 @@
   background: #FF5252;
   font-weight: bold;
   margin-left: 270px;
+  color: white;
+  height: 40px;
+  width: 120px;
 }
 
 .buttonSignIn:hover{
   background: #FF5252;
+}
+
+.buttonSignIn a{
+  color: white;
 }

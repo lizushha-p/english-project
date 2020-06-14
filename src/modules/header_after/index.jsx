@@ -16,7 +16,7 @@ class HeaderAfter extends Component{
             <NavLink to='/my-account' className='navLink_main'>Личный кабинет</NavLink>
             </li>
             <li>
-            <NavLink to='/sign-out' className='navLink_main'>Выход</NavLink>
+            <NavLink to='/sign-in' className='navLink_main'>Выход</NavLink>
             </li>
           </ul>
     </div>

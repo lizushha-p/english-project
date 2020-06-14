@@ -2,11 +2,11 @@
   position: relative;
   background: #5E2DE7;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
-  top:40px;
-  left: 158px;
+  top:36px;
+  left: 156px;
 }
 
 .part1_welcome{
@@ -17,19 +17,20 @@
   position: relative;
   background: #323232;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   left: 1102px;
   top: 10px;
+  margin-bottom: 10px;
 }
 
 .dialog_block button{
   position: relative;
   background: #5E2DE7;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   top:45px;
   left: 230px;
@@ -39,8 +40,8 @@
   position: relative;
   background: #323232;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   left: 1102px;
   top: -100px;
@@ -63,8 +64,8 @@
   position: relative;
   background: #323232;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   margin-top: 20px;
 }
@@ -73,10 +74,83 @@
   position: relative;
   background: #323232;
   border-radius: 30px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   outline: none;
   margin-top: 20px;
+  top: -50px;
+}
+
+.part5_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  outline: none;
   left: 615px;
-  top: 40px;
+  margin-top: 50px;
+}
+
+.answer_on_question2 {
+  display: flex;
+  justify-content: center;
+}
+
+.answer_on_question2 button{
+  outline: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 50px 10px;
+}
+
+.part6_next button{
+  position: relative;
+  background: #323232;
+  border-radius: 30px;
+  height: 50px;
+  width: 50px;
+  outline: none;
+  margin-top: 20px;
+}
+
+.question3 button{
+  outline: none;
+  background: white;
+  font-size: 20px;
+  border-radius: 30px;
+  margin: 30px 10px;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  height: 170px;
+}
+
+.answer_on_question3 button{
+  background-color: white;
+  outline: none;
+  font-size: 15px;
+  border-radius: 30px;
+  padding: 10px 15px;
+  margin: 0 8px;
+  margin-bottom: 20px;
+}
+
+.buttonComplete{
+  margin: 80px 500px;
+  border-radius: 8px;
+  background: #FF5252;
+  /* font-weight: bold; */
+  padding: 10px 15px;
+  font-size: 15px;
+}
+
+.buttonComplete:hover{
+  background: #FF5252;
+}
+
+.buttonComplete a{
+  color: black;
+  /* text-transform: capitalize; */
 }

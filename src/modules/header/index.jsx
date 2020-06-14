@@ -10,13 +10,13 @@ class Header extends Component{
           <LogoPicture className='logoPicture'/>
           <ul className='menuElements'>
             <li>
-              <NavLink to='/' className='navLink_main'>О сайте</NavLink>
+              <NavLink to='/about' className='navLink_main1'>О сайте</NavLink>
             </li>
             <li>
-              <NavLink to='/sign-up' className='navLink_main'>Регистрация</NavLink>
+              <NavLink to='sign-up' className='navLink_main2'>Регистрация</NavLink>
             </li>
             <li>
-              <NavLink to='/sign-in' className='navLink_main'>Вход</NavLink>
+              <NavLink to='sign-in' className='navLink_main3'>Вход</NavLink>
             </li>
           </ul>
     </div>

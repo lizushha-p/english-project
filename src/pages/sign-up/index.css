@@ -25,14 +25,15 @@
 }
 
 .buttonSignUp{
-  margin-top: 5px;
+  margin-top: 20px;
   border-radius: 8px;
   background: #FF5252;
   font-weight: bold;
-  color:  #080b27;
+  color: white;
+  height: 40px;
+  width: 120px;
 }
 
 .buttonSignUp:hover{
-  background: #FF5252;
-  color:  white;
+  background: rgb(211, 64, 64);
 }

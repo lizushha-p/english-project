@@ -53,6 +53,7 @@ class SignUpController extends Component{
               isSubmitting,
             }) => ( <SignUpForm isButtonDisabled={!isEmpty(errors)} errors={errors} isSubmitting={isSubmitting} />) }
           </Formik>
+          <SignUpPicture1 style={{transform:'scale(-1,1)'}}/>
         </div>
       </Page>
     )
