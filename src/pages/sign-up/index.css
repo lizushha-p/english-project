@@ -37,3 +37,10 @@
 .buttonSignUp:hover{
   background: rgb(211, 64, 64);
 }
+
+.error {
+  position: relative;
+  bottom: 20px;
+  font-size: 10px;
+  color: rgb(211, 64, 64);
+}

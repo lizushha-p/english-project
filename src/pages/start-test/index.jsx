@@ -8,6 +8,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Button from '@material-ui/core/Button';
+import { getUserUid } from '../../modules/auth';
 import Loader from '../../component/loader/index'
 import { getQuizes, fetchQuizes } from '../../modules/quiz';
 import onePicture from './assets/image1.svg';
@@ -22,6 +23,7 @@ import resultPicture from './assets/image9.svg'
 import { getStartLevel } from './start-test-utils';
 import {NavLink} from 'react-router-dom'
 import './index.css'
+import {baseFirebase} from "../../firebase";
 
 class StartTestController extends Component {
   state = {
@@ -61,8 +63,12 @@ class StartTestController extends Component {
   get getEnglishLevel () {
     return getStartLevel(this.state.result);
   }
+  componentWillUnmount() {
+    baseFirebase.database().ref(`users/${this.props.userId}/level`).set(getStartLevel(this.state.result));
+  }
 
   render(){
+    console.log(this.state);
     if (isEmpty(this.props.quizes)) {
       return <Loader/>
     }
@@ -121,6 +127,7 @@ class StartTestController extends Component {
 
 const mapStateToProps = createStructuredSelector({
   quizes: getQuizes,
+  userId: getUserUid,
 })
 
 const mapDispatchToProps = {

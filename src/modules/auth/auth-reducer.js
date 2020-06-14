@@ -6,10 +6,16 @@ const INITIAL_STATE = {
 
 export const authReducer = (state = INITIAL_STATE, { payload, type }) => {
   switch (type) {
+    case 'SET_ERROR':
+      return {
+        ...state,
+        error: payload,
+      }
     case SET_LOG_IN:
       return {
         ...state,
         isLoggined: true,
+        uid: payload,
       };
     default:
       return state;

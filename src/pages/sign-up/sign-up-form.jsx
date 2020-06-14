@@ -5,7 +5,7 @@ import { Form } from 'formik';
 import React from 'react';
 import './index.css';
 
-export const SignUpForm = ({errors, isButtonDisabled}) => (
+export const SignUpForm = ({errors, isButtonDisabled, hasError}) => (
   <Form>
     <div className='wrapperformRegistaration'>
       <div className='titleSignUp'>Регистрация</div>
@@ -40,6 +40,7 @@ export const SignUpForm = ({errors, isButtonDisabled}) => (
           required
           error={errors.email}
         />
+        {hasError && <span className={'error'}>{hasError}</span>}
         <FInput
           className='inputSignUp'
           type="password"

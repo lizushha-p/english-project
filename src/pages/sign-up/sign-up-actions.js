@@ -16,9 +16,13 @@ export const signUpUser = ({
       login,
       password
     });
-    dispatch(setLogIn());
+    dispatch(setLogIn(response.user.uid));
     history.push('/level-question');
   } catch (e) {
+    dispatch({
+      type: 'SET_ERROR',
+      payload: e.message,
+    })
     console.error(e);
   }
 };

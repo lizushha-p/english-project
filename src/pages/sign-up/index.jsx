@@ -9,7 +9,6 @@ import { ReactComponent as SignUpPicture1} from './assets/sign-up1.svg'
 import './index.css'
 
 class SignUpController extends Component{
-
   onSubmitClickHandler = (values) => {
     this.props.signUpUser({
       firstName: values.firstName,
@@ -51,7 +50,7 @@ class SignUpController extends Component{
             {({
               errors,
               isSubmitting,
-            }) => ( <SignUpForm isButtonDisabled={!isEmpty(errors)} errors={errors} isSubmitting={isSubmitting} />) }
+            }) => ( <SignUpForm hasError={this.props.error} isButtonDisabled={!isEmpty(errors)} errors={errors} isSubmitting={isSubmitting} />) }
           </Formik>
           <SignUpPicture1 style={{transform:'scale(-1,1)'}}/>
         </div>
@@ -60,10 +59,14 @@ class SignUpController extends Component{
   }
 }
 
+const mapStateToProps = (state) => ({
+  error: state.auth.error,
+})
+
 const mapDispatchToProps = {
   signUpUser,
 }
 
-const SignUp = connect(null, mapDispatchToProps)(SignUpController);
+const SignUp = connect(mapStateToProps, mapDispatchToProps)(SignUpController);
 
 export default SignUp
